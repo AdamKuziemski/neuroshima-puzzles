@@ -32,7 +32,7 @@ impl Lock {
         let digits = LockLength::new(digits)?;
         let max_range = digits.as_range();
         let max_guesses: usize = digits.guess_range();
-        let code: usize = rand::thread_rng().gen_range(1..=max_range);
+        let code: usize = rand::thread_rng().gen_range(0..=max_range);
 
         Ok(Self {
             code,
