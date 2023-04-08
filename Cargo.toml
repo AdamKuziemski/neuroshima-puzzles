@@ -3,6 +3,16 @@ name = "neuroshima-puzzles"
 version = "0.1.0"
 edition = "2021"
 
+[workspace]
+members = [
+  "building_control",
+  "guess_code"
+]
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+guess_code = { path = "./guess_code" }
+building_control = { path = "./building_control" }
+
+clap = { version = "4.2.1", features = ["derive"] }
