@@ -140,7 +140,6 @@ impl LockLength {
         while 10_usize.pow(digits as u32) <= number {
             digits = digits + 1;
         }
-        println!("Kod {}-cyfrowy", digits);
 
         Self::new(digits)
     }
