@@ -56,7 +56,10 @@ fn main() -> Result<(), LockError> {
             return lock.try_break();
         },
         Minigame::Building(building_options) => {
-            let building = Building::from_file(building_options.file);
+            match Building::from_file(building_options.file) {
+                Ok(mut building) => building.manage(),
+                Err(_) => println!("Error")
+            }
             return Ok(())
         }
     }

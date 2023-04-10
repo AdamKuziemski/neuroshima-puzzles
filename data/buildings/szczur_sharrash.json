@@ -1,0 +1,69 @@
+{
+  "name": "Fabryka Molocha - Sharrash",
+  "devices": [
+    {
+      "name": "Hala montażowa - Kamera 1",
+      "is_on": true
+    },
+    {
+      "name": "Hala montażowa - Kamera 2",
+      "is_on": true
+    },
+    {
+      "name": "Hala montażowa - Kamera 3",
+      "is_on": true
+    },
+    {
+      "name": "Hala montażowa - Kamera 4",
+      "is_on": true
+    },
+    {
+      "name": "Hala montażowa - Kamera 5",
+      "is_on": true
+    },
+    {
+      "name": "Hala montażowa - Kamera 6",
+      "is_on": true
+    },
+    {
+      "name": "Hol - Kamera 1",
+      "is_on": true
+    },
+    {
+      "name": "Hol - Kamera 2",
+      "is_on": true
+    },
+    {
+      "name": "Poręcz schodów - Kamera 1",
+      "is_on": true
+    },
+    {
+      "name": "Poręcz schodów - Kamera 2",
+      "is_on": true
+    },
+    {
+      "name": "Hol - Karabin strażniczy 1",
+      "is_on": true
+    },
+    {
+      "name": "Hol - Karabin strażniczy 2",
+      "is_on": true
+    },
+    {
+      "name": "Hol - Karabin strażniczy 3",
+      "is_on": true
+    },
+    {
+      "name": "Korytarz A1 - Karabin strażniczy",
+      "is_on": true
+    },
+    {
+      "name": "Korytarz A2 - Karabin strażniczy",
+      "is_on": true
+    },
+    {
+      "name": "Serwerownia - Kamera 1",
+      "is_on": true
+    }
+  ]
+}

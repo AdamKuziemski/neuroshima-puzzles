@@ -1,0 +1,153 @@
+{
+  "name": "Hell's Angels Stronghold",
+  "devices": [
+    {
+      "name": "Main Gate",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Front door",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Back door",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Side door",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Outside camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Outside camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Outside camera 3",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Outside camera 4",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 3",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 4",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 5",
+      "is_on": true
+    },
+    {
+      "name": "Building A - Inside camera 6",
+      "is_on": true
+    },
+    {
+      "name": "Building A, corridor - Sentry turret 1",
+      "is_on": true
+    },
+    {
+      "name": "Building A, corridor - Sentry turret 2",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Front door",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Back door",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Outside camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Outside camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Outside camera 3",
+      "is_on": true
+    },
+    {
+      "name": "Building B - Outside camera 4",
+      "is_on": true
+    },
+    {
+      "name": "Building B, entrance - Camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Building B, entrance - Camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Building B, entrance - Sentry turret 1",
+      "is_on": true
+    },
+    {
+      "name": "Building B, entrance - Sentry turret 2",
+      "is_on": true
+    },
+    {
+      "name": "Building B, entrance - Sentry turret 3",
+      "is_on": true
+    },
+    {
+      "name": "Main building, entrance - Door camera",
+      "is_on": true
+    },
+    {
+      "name": "Main building, entrance - Door turret",
+      "is_on": true
+    },
+    {
+      "name": "Main building, door",
+      "is_on": true
+    },
+    {
+      "name": "Main building, ground floor - Camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Main building, ground floor - Camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Main building, ground floor - Camera 3",
+      "is_on": true
+    },
+    {
+      "name": "Main building, ground floor - Camera 4",
+      "is_on": true
+    },
+    {
+      "name": "Main building, server room - Camera 1",
+      "is_on": true
+    },
+    {
+      "name": "Main building, server room - Camera 2",
+      "is_on": true
+    },
+    {
+      "name": "Main building, server room - Sentry turret",
+      "is_on": true
+    }
+  ]
+}
