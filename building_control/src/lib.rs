@@ -3,17 +3,17 @@ use cursive::{
     views::{Checkbox, Dialog, ListView, ScrollView, NamedView}
 };
 
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 
-use std::fs;
+use std::{fs, io::Write};
 
-#[derive(Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Device {
     pub name: String,
     pub is_on: bool,
 }
 
-#[derive(Deserialize, Clone)]
+#[derive(Serialize, Deserialize, Clone)]
 pub struct Building {
     pub name: String,
     pub password: Option<String>,
@@ -31,16 +31,30 @@ impl Building {
 
     pub fn manage(&self) {
         let mut siv = cursive::default();
+        siv.set_user_data(self.clone());
 
         siv.add_fullscreen_layer(
             Dialog::new()
                 .title(format!("{}",  self.name))
+                .button("Save", |s| s.with_user_data(|d: &mut Building| {
+                    d.save_to_file()
+                }).unwrap())
                 .button("Quit", |s| s.quit())
                 .content(self.create_device_checklist())
                 .full_width(),
         );
 
         siv.run();
+    }
+
+    pub fn save_to_file(&mut self) {
+        match fs::File::create("./data/saves/save_file.json") {
+            Ok(mut file) => {
+                let save = serde_json::to_string(self).unwrap();
+                file.write_all(save.as_bytes()).unwrap();
+            },
+            Err(_) => ()
+        };
     }
 
     fn create_device_checklist(&self) -> ScrollView<ListView> {
@@ -57,8 +71,20 @@ impl Building {
     }
 
     fn create_checkbox(device: &Device) -> NamedView<Checkbox> {
+        let modify_for_name = device.name.clone();
+
         Checkbox::new()
             .with_checked(device.is_on)
+            .on_change(move |siv, value| {
+                siv.with_user_data(|building: &mut Building| {
+                    let i = building.devices
+                        .iter()
+                        .position(|d| d.name == modify_for_name)
+                        .unwrap();
+                    building.devices.get_mut(i).unwrap().is_on = value;
+                })
+                .unwrap();
+            })
             .with_name(device.name.clone())
     }
 }
