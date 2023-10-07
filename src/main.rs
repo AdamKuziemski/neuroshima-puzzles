@@ -1,50 +1,23 @@
-use clap::{Args, Parser, Subcommand};
+use clap::{Parser};
 
 use building_control::Building;
 use guess_code::{Lock, LockError};
 
-/// Pick a minigame
-#[derive(Parser, Debug)]
-#[command(author, about, long_about = None)]
-pub struct Options {
-    #[command(subcommand)]
-    game: Minigame
-}
+mod game_config;
+use game_config::GameConfig;
 
-#[derive(Subcommand, Debug)]
-pub enum Minigame {
-    Building(BuildingOptions),
-    Lock(LockOptions),
-}
+mod minigame;
+use minigame::Minigame;
 
-/// Launches the building minigame
-#[derive(Args, Debug)]
-#[group(multiple = true)]
-pub struct BuildingOptions {
-    /// Defines the filename containing the building config
-    #[arg(short, long)]
-    file: String,
-}
-
-/// Launches the lock minigame
-#[derive(Args, Debug)]
-#[group(multiple = false)]
-pub struct LockOptions {
-    /// Defines the number of digits
-    #[arg(short, long, default_value_t = 3)]
-    digits: usize,
-
-    /// Defines the code to guess
-    #[arg(short, long)]
-    code: Option<usize>,
-}
+mod building_config;
+mod lock_config;
 
 fn main() -> Result<(), LockError> {
-    let options = Options::parse();
+    let options = GameConfig::parse();
 
     match options.game {
-        Minigame::Lock(lock_options) => {
-            match lock_options.code {
+        Minigame::Lock(lock_config) => {
+            match lock_config.code {
                 Some(code) => {
                     let mut lock = Lock::from(code)?;
                     return lock.try_break();
@@ -52,11 +25,11 @@ fn main() -> Result<(), LockError> {
                 None => ()
             }
 
-            let mut lock = Lock::random(lock_options.digits)?;
+            let mut lock = Lock::random(lock_config.digits)?;
             return lock.try_break();
         },
-        Minigame::Building(building_options) => {
-            match Building::from_file(building_options.file) {
+        Minigame::Building(building_config) => {
+            match Building::from_file(building_config.file) {
                 Ok(building) => building.manage(),
                 Err(_) => println!("Error")
             }

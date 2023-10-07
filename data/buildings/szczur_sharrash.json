@@ -3,67 +3,115 @@
   "devices": [
     {
       "name": "Hala montażowa - Kamera 1",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hala montażowa - Kamera 2",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hala montażowa - Kamera 3",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hala montażowa - Kamera 4",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hala montażowa - Kamera 5",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hala montażowa - Kamera 6",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hol - Kamera 1",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hol - Kamera 2",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Poręcz schodów - Kamera 1",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Poręcz schodów - Kamera 2",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hol - Karabin strażniczy 1",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hol - Karabin strażniczy 2",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Hol - Karabin strażniczy 3",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Korytarz A1 - Karabin strażniczy",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Korytarz A2 - Karabin strażniczy",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     },
     {
       "name": "Serwerownia - Kamera 1",
-      "is_on": true
+      "is_on": true,
+      "targets_humans": true,
+      "targets_mutants": false,
+      "targets_machines": false
     }
   ]
 }
