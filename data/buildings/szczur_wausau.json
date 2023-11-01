@@ -3,80 +3,48 @@
   "devices": [
     {
       "name": "Budynek B, parter - Kamera 1",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, parter - Fotokomórka 1",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, parter - Fotokomórka 2",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, parter - Drzwi automatyczne",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, parter - Fotokomórka 1",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, parter - Kamera 2",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, piętro - Kamera 1",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, piętro - Kamera 2",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, piętro - Kamera 3",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, piętro - Kamera 4",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     },
     {
       "name": "Budynek B, piętro - Wysięgnik",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": true
     }
-  ]
+  ],
+  "doors": []
 }

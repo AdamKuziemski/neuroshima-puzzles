@@ -2,116 +2,455 @@
   "name": "Fabryka Molocha - Sharrash",
   "devices": [
     {
-      "name": "Hala montażowa - Kamera 1",
+      "name": "Hala montażowa - Kamera MT 1",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hala montażowa - Kamera 2",
+      "name": "Hala montażowa - Kamera MT 2",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hala montażowa - Kamera 3",
+      "name": "Hala montażowa - Kamera IR/TH 1",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hala montażowa - Kamera 4",
+      "name": "Hala montażowa - Kamera IR/TH 2",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hala montażowa - Kamera 5",
+      "name": "Hala montażowa - Kamera IR/TH 3",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hala montażowa - Kamera 6",
+      "name": "Hala montażowa - Kamera IR/TH 4",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hol - Kamera 1",
+      "name": "Hala montażowa - Kamera IR/TH 5",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Hol - Kamera 2",
+      "name": "Hala montażowa - Kamera IR/TH 6",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Magazyn - Kamera 1",
+      "is_on": true,
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Hol - Kamera MT 1",
+      "is_on": true,
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Hol - Kamera MT 2",
+      "is_on": true,
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Hol - Kamera IR 1",
+      "is_on": true,
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Poręcz schodów - Kamera 1",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Poręcz schodów - Kamera 2",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Żyrandol - Kamera 1",
+      "is_on": true,
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Brama - Kamera 1",
+      "is_on": true,
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    {
+      "name": "Budynek - Kamera 1",
+      "is_on": true,
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Hol - Karabin strażniczy 1",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Hol - Karabin strażniczy 2",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Hol - Karabin strażniczy 3",
-      "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "is_on": false,
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Korytarz A1 - Karabin strażniczy",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
       "name": "Korytarz A2 - Karabin strażniczy",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
     },
     {
-      "name": "Serwerownia - Kamera 1",
+      "name": "Serwerownia - Karabin strażniczy",
       "is_on": true,
-      "targets_humans": true,
-      "targets_mutants": false,
-      "targets_machines": false
+      "optics": {
+        "value": 20,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      },
+      "thermals": {
+        "value": 36,
+        "cap": {
+          "min": -100,
+          "max": 100
+        }
+      },
+      "motion": {
+        "value": 90,
+        "cap": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    }
+  ],
+  "doors": [
+    {
+      "name": "Drzwi frontowe",
+      "is_on": true,
+      "is_open": true
+    },
+    {
+      "name": "Drzwi boczne",
+      "is_on": true,
+      "is_open": false
+    },
+    {
+      "name": "Serwerownia",
+      "is_on": true,
+      "is_open": true
+    },
+    {
+      "name": "Hala montażowa - N",
+      "is_on": true,
+      "is_open": true
+    },
+    {
+      "name": "Hala montażowa - S",
+      "is_on": true,
+      "is_open": true
+    },
+    {
+      "name": "Hala montażowa - drzwi wewnętrzne",
+      "is_on": true,
+      "is_open": true
+    },
+    {
+      "name": "Magazyn",
+      "is_on": true,
+      "is_open": true
     }
   ]
 }

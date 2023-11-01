@@ -1,35 +1,41 @@
-# neuroshima-puzzles
-Kolekcja zagadek do Neuroshimy i innych RPG z łamaniem zabezpieczeń elektronicznych
+# Neuroshima Toolkit
+A collection of puzzles and tools for Neuroshima and other RPGs focused on hacking.
 
-## Użycie
-Wpisz w konsoli:
+## Usage
 
+### Cargo
+In you console, type:
 ```bash
-cargo run -- [opcja] [parametry]
+cargo run -- [option] [parameters]
 ```
 
-Jeśli uruchamiasz zbudowaną aplikację:
+### Compiled application
 ```bash
-neuroshima-puzzles [opcja] [parametry]
+neuroshima-toolkit [option] [parameters]
 ```
 
-### Opcje
+### Options
 
-#### Zamek cyfrowy
-Opcja `lock` to symulacja otwierania cyfrowego zamka.
+#### Digital lock
+The `lock` option opens a simulator of a digital lock (usually a keypad).
 
-**Parametry:**
-* `--digits [liczba od 2 do 7]` (skrót: `-d [liczba]`) - domyślnie: 3
-* `--code [kod zamka]` (skrót: `-c [kod]`) - domyślnie losowy, długość nie może przekroczyć 7
+The PC has to guess the code below a certain number of steps. The lock tells the PC if their guess is a higher or a lower number than the code. Every code can be guessed in `ceil(log n)` tries (it's essentially a binary search).
 
-**Przykłady:**
-* `neuroshima-puzzles lock --digits 3` daje nam losowy trzycyfrowy zamek z losowym kodem.
-* `neuroshima-puzzles lock --code 1234` daje nam czterocyfrowy zamek o kodzie `1234`.
+###### Parameters:
+* `--digits [number from 2 to 7]` (short: `-d [number]`) - default: 3
+* `--code [lock code]` (short: `-c [code]`) - by default it's randomized, can't be longer than 7 digits
 
-Postać gracza musi odgadnąć szyfr w określonej liczbie ruchów, a zamek odpowiada, czy zgadywana liczba jest niższa czy wyższa od szyfru. Każdy szyfr można zgadnąć w `ceil(log n)` ruchach (jest to zasadniczo wyszukiwanie binarne).
+**Note:** if the actual code is shorter than the number of digits, it gets prefilled with zeroes to fill the length, e.g. if the code is 5 digits long and the app's random choice was 32, then the actual code is `00032` and that's what the PCs will need to input.
 
-#### Sterowanie budynkiem
-Opcja `building` daje nam opcję sterowania budynkiem.
+###### Examples:
+* `neuroshima-toolkit lock --digits 3` will be a random lock with a three-digit code.
+* `neuroshima-toolkit lock --code 1234` will be a four digit code: `1234`.
 
-**Parametry:** 
-* `--file ścieżkaDoPliku` pozwala nam otworzyć plik w formacie JSON.
+#### Building control
+The `building` opens an interface that gives the PC control over specific devices on the network, which is defined in a json file (see [dummy_building.json](data/buildings//dummy_building.json)).
+
+###### Controls
+Use arrow keys to navigate, 
+
+###### Parameters:
+* `--file nameOfJSONBuildingConfigFile` opens the JSON file and presents it in the interface (you don't need to add the `.json` extension, just the file name).

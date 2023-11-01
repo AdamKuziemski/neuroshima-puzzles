@@ -1,18 +1,19 @@
 {
   "name": "Hell's Angels Stronghold",
+  "password": null,
   "devices": [
     {
       "name": "Building A - Outside camera 1",
       "is_on": true,
       "optics": {
-        "value": 20,
+        "value": 555,
         "cap": {
           "min": 0,
           "max": 100
         }
       },
       "thermals": {
-        "value": 36,
+        "value": 123,
         "cap": {
           "min": -100,
           "max": 100
@@ -301,8 +302,6 @@
         }
       }
     },
-    
-    
     {
       "name": "Building B - Outside camera 1",
       "is_on": true,
@@ -578,7 +577,6 @@
         }
       }
     },
-    
     {
       "name": "Main building, ground floor - Camera 1",
       "is_on": true,
