@@ -6,8 +6,6 @@ use cursive::{
 
 use serde::{Deserialize, Serialize};
 
-// use chrono::
-
 use std::{fs, io::Write};
 
 use crate::device::{ Device, Door, SensorType, Sensor, DoorControl };
@@ -48,8 +46,9 @@ impl Building {
     }
 
     pub fn save_to_file(&mut self) {
-        // todo: add {date}-{time} to the file name
-        match fs::File::create("./data/saves/save_file.json") {
+        let now = chrono::offset::Local::now().timestamp();
+
+        match fs::File::create("./data/saves/save_file_".to_string() + now.to_string().as_str() + ".json") {
             Ok(mut file) => {
                 let save = serde_json::to_string(self).unwrap();
                 file.write_all(save.as_bytes()).unwrap();
